@@ -1,0 +1,31 @@
+{
+  "name": "mevn-contactbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinh466/mevn-contactbook.git"
+  },
+  "keywords": [
+    "express",
+    "mongo",
+    "vue",
+    "mongodb",
+    "bootstrap"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinh466/mevn-contactbook/issues"
+  },
+  "homepage": "https://github.com/vinh466/mevn-contactbook#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
