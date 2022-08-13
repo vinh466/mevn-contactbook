@@ -26,7 +26,8 @@
   "homepage": "https://github.com/vinh466/mevn-contactbook#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mongodb": "^4.8.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
