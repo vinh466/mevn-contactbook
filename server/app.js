@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const errorHandler = require('./app/middlewares/errorHandler.mdw');
 
 const app = express();
 
@@ -11,5 +12,8 @@ app.get('/', (req, res) => {
         message: 'success'
     })
 })
+
+app.use(errorHandler.errorHandle404)
+app.use(errorHandler.errorHandleLast)
 
 module.exports = app;
