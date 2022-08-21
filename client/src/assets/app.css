@@ -1,0 +1,48 @@
+@import "./global.css";
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header h1 {
+  font-weight: 700;
+}
+
+.disabled {
+  opacity: .5;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+  padding: 5px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}

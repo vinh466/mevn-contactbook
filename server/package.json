@@ -2,16 +2,9 @@
   "name": "mevn-contactbook",
   "version": "1.0.0",
   "description": "",
-  "workspaces": [
-    "server/",
-    "client/"
-  ],
+  "main": "/server.js",
   "scripts": {
-    "dev": "concurrently \"npm run server-dev\" \"npm run client-dev\"",
-    "server-dev": "npm run dev -w server",
-    "client-preview": "npm run preview -w client",
-    "client-build": "npm run build -w client",
-    "client-dev": "npm run dev -w client",
+    "dev": "nodemon server.js",
     "start": "echo \"Error: no start script specified\" && exit 1",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,13 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/vinh466/mevn-contactbook.git"
   },
-  "keywords": [
-    "express",
-    "mongo",
-    "vue",
-    "mongodb",
-    "bootstrap"
-  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -33,8 +19,12 @@
   },
   "homepage": "https://github.com/vinh466/mevn-contactbook#readme",
   "dependencies": {
-    "concurrently": "^7.3.0",
-    "vee-validate": "^4.6.10",
-    "yup": "^0.32.11"
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongodb": "^4.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }

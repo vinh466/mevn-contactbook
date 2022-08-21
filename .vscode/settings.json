@@ -1,0 +1,21 @@
+
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true,
+        "source.sortMembers": true
+    },
+    "vetur.validation.template": false,
+    "vetur.validation.script": false,
+    "vetur.validation.style": false,
+    "files.exclude": {
+        "*/node_modules": true,
+        "server": false,
+        "client": false,
+        "node_modules": true,
+        "*/package-lock.json": true,
+        "package-lock.json": true,
+        "out": true
+    }
+}
