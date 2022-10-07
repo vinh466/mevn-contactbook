@@ -9,9 +9,14 @@ const routes = [
         component: ContactBook,
     },
     {
+        path: "/contacts/create",
+        name: "contact.create",
+        component: () => /* webpackChunkName: "contact.create" */ import("@/views/ContactCreate.vue")
+    },
+    {
         path: "/contacts/:id",
         name: "contact.edit",
-        component: () => /* webpackChunkName: "signin" */ import("@/views/ContactEdit.vue"),
+        component: () => /* webpackChunkName: "/contacts/:id" */ import("@/views/ContactEdit.vue"),
         props: true // Truyền các biến trong $route.params vào làm props
     },
     {

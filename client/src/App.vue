@@ -12,11 +12,9 @@
   </component>
 </template> -->
 <template>
-  <div id="app">
-    <AppHeader />
-    <div class="container mt-3">
-      <router-view />
-    </div>
+  <AppHeader />
+  <div class="container mt-3">
+    <router-view />
   </div>
 </template>
 
