@@ -19,7 +19,12 @@ const routes = [
         name: 'signup',
         meta: { layout: auth },
         component: () => /* webpackChunkName: "signup" */ import('../views/signUp.vue')
-    }
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "notfound",
+        component: () => import("@/views/NotFound.vue"),
+    },
 ]
 
 const router = createRouter({ history: createWebHistory(import.meta.env.BASE_URL), routes })
