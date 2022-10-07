@@ -9,6 +9,12 @@ const routes = [
         component: ContactBook,
     },
     {
+        path: "/contacts/:id",
+        name: "contact.edit",
+        component: () => /* webpackChunkName: "signin" */ import("@/views/ContactEdit.vue"),
+        props: true // Truyền các biến trong $route.params vào làm props
+    },
+    {
         path: '/signin',
         name: 'signin',
         meta: { layout: auth },
