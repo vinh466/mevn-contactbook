@@ -1,7 +1,13 @@
+import ContactBook from '@/views/ContactBook.vue';
 import { auth } from "@/views/layouts";
 import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
+    {
+        path: "/",
+        name: "contactbook",
+        component: ContactBook,
+    },
     {
         path: '/signin',
         name: 'signin',
